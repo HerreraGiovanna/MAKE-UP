@@ -1,0 +1,286 @@
+/* Estilos globales */
+body {
+    font-family: 'Mi Fuente', Arial, sans-serif; /* Cambia 'Mi Fuente' con el nombre de tu fuente personalizada */
+    background-color: #ffcccb; /* Color de fondo rosa */
+    color: #333; /* Color de texto principal */
+    padding: 20px;
+    background-image: url('fondo.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL o ruta de tu imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 1; /* Ajusta la opacidad según tu preferencia */
+}
+
+header {
+    background-color: rgba(255, 204, 203, 5); /* Fondo semitransparente para el encabezado */
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    margin-right: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: black; /* Color del texto del encabezado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5; /* Espaciado entre líneas */
+    background-color: rgba(255, 204, 203, 0.6); /* Fondo semitransparente para el texto */
+    color: #333;
+    padding: 10px; /* Espaciado interno para el texto */
+}
+
+/* Estilos para los elementos de la lista ordenada y desordenada */
+ol, ul {
+    font-size: 16px;
+    line-height: 1.3;
+    padding-left: 10px; /* Espacio adicional a la izquierda del texto */
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+    color: #000; /* Color de texto negro (muy oscuro) */
+}
+
+ol li, ul li {
+    font-size: 16px;
+    line-height: 1.3;
+    padding-left: 10px; /* Espacio adicional a la izquierda del texto */
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+    color: #000; /* Color de texto negro (muy oscuro) */
+}
+
+.alinearizquierda {
+    text-align: left;
+}
+
+a.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0040;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.boton-volver:hover {
+    background-color: #ff007f;
+}
+
+.negro {
+    color: #000; /* Color de texto negro (muy oscuro) */
+}
+
+/* Estilo para el menú de navegación */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffcccb; /* Fondo rosa para el menú */
+}
+
+.menu li {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.menu li a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #333; /* Color del texto del menú */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición al pasar el mouse */
+}
+
+.menu li a:hover {
+    background-color: #ff007f; /* Cambio de color al pasar el mouse */
+    color: #fff; /* Cambio de color del texto al pasar el mouse */
+}
+
+/* Agrega los estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Fondo del menú desplegable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajusta el índice z para estar por encima de otros elementos */
+}
+
+#brochas:hover .submenu {
+    display: block; /* Muestra el menú desplegable al pasar el mouse sobre "Brochas" */
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Color del texto en el menú desplegable */
+}
+
+.submenu a:hover {
+    background-color: #f2f2f2; /* Cambia el color de fondo al pasar el mouse sobre las opciones */
+}
+
+a.boton-volver {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff0040;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: 'Mi Fuente', Arial, sans-serif; /* Aplica la fuente personalizada */
+        transition: transform 0.3s; /* Agrega la transición de transformación */
+}
+
+a.boton-volver:hover {
+    transform: scale(1.1); /* Escala el botón al pasar el mouse */
+}
+
+@keyframes animacionTitulo {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.03); /* Tamaño ligeramente más grande */
+    }
+    100% {
+        transform: scale(1); /* Volver al tamaño original */
+    }
+}
+
+h1#Inicio {
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: animacionTitulo 5s infinite; /* Aplica la animación al título */
+}
+/* Estilos para el párrafo con la clase footer */
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Cambia a relative */
+    margin-top: -40px; /* Ajusta según sea necesario para el espacio deseado */
+    width: 100%; /* Ocupa el 100% del ancho */
+}
+/* Estilos para el enlace de Inicio */
+h3 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0040;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 a:hover {
+    background-color: #ff007f;
+}
+/* Estilos adicionales */
+
+/* Estilos para las imágenes en la sección de maquillaje nocturno */
+header img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-bottom: 20px; /* Agrega espacio entre las imágenes y el texto */
+}
+
+/* Estilos para la sección de "Pagina Principal" */
+.boton-volver {
+    margin-top: 20px; /* Ajusta el margen superior del botón */
+}
+
+/* Estilos para el pie de página */
+.footer p {
+    margin: 0; /* Elimina el margen inferior del párrafo dentro del pie de página */
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.carousel-item img {
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-nocturno {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px; /* Reducido el margen superior aún más */
+}
+
+.carousel-inner-nocturno {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-nocturno {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.carousel-item-nocturno img {
+    width: 50%;
+    height: 50%;
+}
+
+.contenido-texto {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0040;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+.maquillajedia
+{
+    text-align: left;
+    justify-content: left;
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: -10px; /* Ajusta el margen superior según sea necesario */
+}
+.imagen-inicio {
+    /* Estilos específicos para la imagen de inicio */
+    width: 75%; /* Puedes ajustar el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
